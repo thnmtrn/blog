@@ -12,12 +12,46 @@ const projectsData = [
     href: 'https://thien.gg/pokedex',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten handphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'notes',
+    description: `notes app with react`,
+    imgSrc: '/static/images/ocean.jpeg',
+    href: '/projects',
+  },
+  {
+    title: 'coach thai',
+    description: `notes app with react`,
+    imgSrc: '/static/images/google.png',
+    href: '/projects',
+  },
+  {
+    title: 'annies nail spa',
+    description: `notes app with react`,
+    imgSrc: '/static/images/ocean.jpeg',
+    href: '/projects',
+  },
+  {
+    title: 'nice dist co',
+    description: `notes app with react`,
+    imgSrc: '/static/images/google.png',
+    href: '/projects',
+  },
+  {
+    title: 'Vite Vue Blog',
+    description: `blog v2 with vite`,
+    imgSrc: '/static/images/ocean.jpeg',
+    href: '/projects',
+  },
+  {
+    title: 'Instagram clone',
+    description: `blog v2 with vite`,
+    imgSrc: '/static/images/ocean.jpeg',
+    href: '/projects',
+  },
+  {
+    title: 'Discord Bot',
+    description: `blog v2 with vite`,
+    imgSrc: '/static/images/google.png',
+    href: '/projects',
   },
 ]
 
