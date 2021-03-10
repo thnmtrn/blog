@@ -45,6 +45,7 @@ const LayoutWrapper = ({ children }) => {
           </div>
         </header>
         <main className="mb-auto">{children}</main>
+        <Link className="text-normal font-mono text-blue-700 dark:text-green-500"><a href="/">cd ..</a></Link>
         <Footer />
       </div>
     </SectionContainer>
