@@ -20,7 +20,7 @@ export default function ListLayout({ posts, title }) {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
-  
+          <p className="text-sm text-gray-600 dark:text-gray-400">Some Reading</p>
           <div className="relative max-w-lg">
             <input
               aria-label="Search articles"
@@ -68,6 +68,9 @@ export default function ListLayout({ posts, title }) {
                         </Link>
                       </h3>
                       <div className="flex flex-wrap">
+                        
+                        
+                        
                         {tags.map((tag) => (
                           <Tag key={tag} text={tag} />
                         ))}

@@ -5,4 +5,4 @@ role="img"
 class="iconify iconify--mdi" 
 width="2.5em" 
 height="2.5em" 
-preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M9 7h6v2h-2v8h-2V9H9V7M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m0 2v14h14V5H5z" fill="currentColor"></path></svg>
+preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M9 7v2h2v8h2V9h2V7H9M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="currentColor"></path></svg>

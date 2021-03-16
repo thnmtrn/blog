@@ -1,6 +1,12 @@
 import { useState } from 'react'
 import Link from './Link'
 import headerNavLinks from '@/data/headerNavLinks'
+import Bookmark from './icons/bookmark.svg'
+import Pen from './icons/pen.svg'
+import Lightning from './icons/lightning.svg'
+import Box from './icons/box.svg'
+import Menu from './icons/menu.svg'
+import Close from './icons/close.svg'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
@@ -18,33 +24,27 @@ const MobileNav = () => {
   }
 
   return (
-    <div className="sm:hidden">
+    <div className="sm:hidden flex flex-row">
+      <Link href="/blog" className="hover:text-blue-600 dark:hover:text-indigo-500"><Pen className="m-1"/></Link>
+      <Link href="/tags" className="hover:text-blue-600 dark:hover:text-indigo-500"><Box className="m-1"/></Link>
+      <Link href="/bookmarks" className="hover:text-blue-600 dark:hover:text-indigo-500"><Bookmark className="m-1"/></Link>
+
+                  
+
+            <Lightning className="m-1"/>
       <button
         type="button"
-        className="w-8 h-8 ml-1 mr-1 rounded"
+        className="w-8 h-8"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          className="text-gray-900 dark:text-gray-100"
-        >
-          {navShow ? (
-            <path
-              fillRule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clipRule="evenodd"
-            />
+
+          {navShow ? (<Close/>
+
           ) : (
-            <path
-              fillRule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clipRule="evenodd"
-            />
+            <Menu/>
           )}
-        </svg>
+
       </button>
       <div
         className={`fixed w-full h-full top-24 right-0 bg-white dark:bg-black opacity-95 z-10 transform ease-in-out duration-300 ${
